@@ -1,1 +1,2 @@
 hola esta es la primera linea de mi documento
+hola esta es la segunda linea de mi documento
