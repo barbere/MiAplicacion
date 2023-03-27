@@ -1,57 +1,54 @@
 package Tp;
 
-public class Pronostico extends Partido{
+public class Pronostico {
+	private int id;
+	private int idPronostico;
+	private String[] Partido;
+	private String[] Equipo;
+
+
 	
-	private ResultadoEnum  resultado;
-	private String equipo;
-	private String partido;
-
-    
-	public ResultadoEnum getResultado() {
-		return resultado;
+	public String[] getPartido() {
+		return Partido;
 	}
 
 
-	public void setResultado(ResultadoEnum resultado) {
-		this.resultado = resultado;
+	public void setPartido(String[] partido) {
+		Partido = partido;
 	}
 
 
-	public String getEquipo() {
-		return equipo;
+	public String[] getEquipo() {
+		return Equipo;
 	}
 
 
-	public void setEquipo(String equipo) {
-		this.equipo = equipo;
+	public void setEquipo(String[] equipo) {
+		Equipo = equipo;
 	}
 
 
-	public String getPartido() {
-		return partido;
+	public Pronostico(int idPronostico, String[] partido, String[] equipo) {
+		this.idPronostico = idPronostico;
+		this.Partido = partido;
+		this.Equipo = equipo;
 	}
 
 
-	public void setPartido(String partido) {
-		this.partido = partido;
+	public int getInd() {
+		return this.id;
+	}
+	public int getIndPronostico() {
+		return this.idPronostico;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	public void setIdPronostico(int idPronostico) {
+		this.idPronostico = idPronostico;
 	}
 
 
-	public Pronostico(ResultadoEnum resultado, String equipo, String partido) {
-		super();
-		this.resultado = resultado;
-		this.equipo = equipo;
-		this.partido = partido;
-	}
 
-
-	public int puntos() {
-		int puntos = 0;
-		ResultadoEnum resultadoRealParaEquipo = this.partido.resultado(this.equipo);
-		if(resultadoRealParaEquipo == this.resultado) {
-			puntos = 20;
-		}
-		return puntos;
-	}
 }
-
