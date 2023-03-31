@@ -1,26 +1,30 @@
 package Tp;
 
-public class Partido extends ResultadoEnum {
-	private int idEquipo;
+public class Partido  {
+	private int id;
 	private int idPartido;
 	private String Equipo1;
 	private String Equipo2;
 	private int GolesEquipo1;
 	private int GolesEquipo2;
-
-	public Partido(int idEquipo,int idPartido, String equipo1, String equipo2, int golesEquipo1, int golesEquipo2) {
-		super(true,true,true);
-		this.idEquipo = idEquipo;
+     Resultado resultado1 = Resultado.GANADOR;
+     Resultado resultado2 = Resultado.PERDEDOR;
+     Resultado resultado3 = Resultado.EMPATE;
+    
+	public Partido(int id,int idPartido, String equipo1, String equipo2, int golesEquipo1, int golesEquipo2) {
+		
+		this.id = id;
 		this.idPartido = idPartido;
 		this.Equipo1 = equipo1;
 		this.Equipo2 = equipo2;
 		this.GolesEquipo1 = golesEquipo1;
 		this.GolesEquipo2 = golesEquipo2;
+		
 	                               }
 
 
 	public Partido(String equipo1, String equipo2, int golesEquipo1, int golesEquipo2) {
-	super(true,true,true);
+	
 		this.Equipo1 = equipo1;
 		this.Equipo2 = equipo2;
 		this.GolesEquipo1 = golesEquipo1;
@@ -28,13 +32,13 @@ public class Partido extends ResultadoEnum {
 	}
 
 
-	public int getIdEquipo() {
-		return idEquipo;
+	public int getId() {
+		return id;
 	}
 
 
-	public void setId(int idEquipo) {
-		this.idEquipo = idEquipo;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 

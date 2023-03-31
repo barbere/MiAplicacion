@@ -5,8 +5,9 @@ public class Pronostico {
 	private int idPronostico;
 	private String[] Partido;
 	private String[] Equipo;
-
-
+	Resultado resultado1 = Resultado.GANADOR;
+    Resultado resultado2 = Resultado.PERDEDOR;
+    Resultado resultado3 = Resultado.EMPATE;
 	
 	public String[] getPartido() {
 		return Partido;
@@ -48,7 +49,7 @@ public class Pronostico {
 	public void setIdPronostico(int idPronostico) {
 		this.idPronostico = idPronostico;
 	}
-
-
-
+	  
 }
+
+

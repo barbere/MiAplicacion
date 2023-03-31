@@ -9,12 +9,15 @@ import java.util.List;
 
 public class Principal {
 	public static void main (String[] args) {
-		
-		String archivoResultado  = "resultados.cvs";
-		String archivoPronostico = "pronosticos.cvs";
+		Resultado resultado1 = Resultado.GANADOR;
+	    Resultado resultado2 = Resultado.PERDEDOR;
+	    Resultado resultado3 = Resultado.EMPATE;
+	    
+		String archivoResultado  = "resultados.txt";
+		String archivoPronostico = "pronosticos.txt";
 
 		// Envio el nombre de la UNICA persona de este pronostico
-		Participante nombre = new Participante ("Mariana","Uria");
+		Participante nombre = new Participante ("Mariana");
 		System.out.println("La persona que hizo este pronostico es: " + nombre.getNombre());
 		System.out.println(" ");
 
@@ -31,7 +34,7 @@ public class Principal {
 			String[] equipo3Pronostico = listaPronostico.get(2).split(" ");
 
 			Partido resultadoPartido1 = new Partido(1,1, equipo2Resultado[0], equipo2Resultado[3], Integer.parseInt(equipo2Resultado[1]), Integer.parseInt(equipo2Resultado[2]));
-			Partido resultadoPartido2 = new Partido(2,2, equipo3Resultado[0], equipo3Resultado[3], Integer.parseInt(equipo3Resultado[1]), Integer.parseInt(equipo3Resultado[2]));
+			Partido resultadoPartido2 = new Partido(1,2, equipo3Resultado[0], equipo3Resultado[3], Integer.parseInt(equipo3Resultado[1]), Integer.parseInt(equipo3Resultado[2]));
 
 			//no se que parametros enviarle, probe de todo!!!	
 			//Pronostico resultadoPronostico1 = new Pronostico(resultadoPartido1.getIdPartido(), resultadoPartido1.getEquipo1(), );
