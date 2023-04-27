@@ -14,8 +14,8 @@ public class PartidoTest {
 @Test
 public void TestPartidoEmpatado () {
 
-   Equipo equipo1 = new Equipo("Boca");
-   Equipo equipo2 = new Equipo("San Lorenzo");
+   Equipo equipo1 = new Equipo("Argentina");
+   Equipo equipo2 = new Equipo("Arabia Saudita");
    Partido partido = new Partido(equipo1,equipo2, 1, 1);
    
    EnumResultado resultadoObtenido = partido.resultado(equipo1);
@@ -28,8 +28,8 @@ public void TestPartidoEmpatado () {
 
 @Test
 public void TestPartidoGanador () {
-	Equipo equipo1 = new Equipo("Boca");
-	   Equipo equipo2 = new Equipo("San Lorenzo");
+	Equipo equipo1 = new Equipo("Argentina");
+	   Equipo equipo2 = new Equipo("Arabia Saudita");
 	   Partido partido = new Partido(equipo1,equipo2, 3, 1);
 	   
 	   EnumResultado resultadoObtenido = partido.resultado(equipo1);
@@ -40,8 +40,8 @@ public void TestPartidoGanador () {
 }
 @Test
 public void TestPartidoPerdedor () {
-	Equipo equipo1 = new Equipo("Boca");
-	   Equipo equipo2 = new Equipo("San Lorenzo");
+	Equipo equipo1 = new Equipo("Argentina");
+	   Equipo equipo2 = new Equipo("Arabia Saudita");
 	   Partido partido = new Partido(equipo1,equipo2, 1, 3);
 	   
 	   EnumResultado resultadoObtenido = partido.resultado(equipo1);

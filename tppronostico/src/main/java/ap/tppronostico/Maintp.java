@@ -30,15 +30,17 @@ public class Maintp {
 						primera = false;
 					} else {
 						// Argentina,1,2,Arabia Saudita
+						System.out.println(lineaResultado);
 						String[] campos = lineaResultado.split(";");
-						Equipo equipo1 = new Equipo(campos[0]);
-						Equipo equipo2 = new Equipo(campos[3]);
+						Ronda nroRonda = new Ronda(campos[0]);
+						Equipo equipo1 = new Equipo(campos[1]);
+						Equipo equipo2 = new Equipo(campos[4]);
 						Partido partido = new Partido(equipo1, equipo2);
-						partido.setGolesEq1(Integer.parseInt(campos[1]));
-						partido.setGolesEq2(Integer.parseInt(campos[2]));
+						partido.setGolesEq1(Integer.parseInt(campos[2]));
+						partido.setGolesEq2(Integer.parseInt(campos[3]));
 						partidos.add(partido);
 					}
-                         System.out.println(lineasResultados);
+                         
 				}
 				// Leer pronostico
 				int puntos = 0; // total puntos pesona
@@ -57,11 +59,14 @@ public class Maintp {
 					if (primera) {
 						primera = false;
 					} else {
+						
 						String[] campos = lineaPronostico.split(";");
-						Equipo equipo1 = new Equipo(campos[0]);
-						Equipo equipo2 = new Equipo(campos[4]);
+						Participante nombre = Nombre(campos[0]);
+						Equipo equipo1 = new Equipo(campos[1]);
+						Equipo equipo2 = new Equipo(campos[5]);
 						Partido partido = null;
-
+						System.out.println(lineaPronostico);
+                        
 						for (Partido partidoCol : partidos) {
 							if (partidoCol.getEquipo1().getNombre(
 									).equals(equipo1.getNombre())
@@ -74,15 +79,15 @@ public class Maintp {
 						}
 						Equipo equipo = null;
 						EnumResultado resultado = null;
-						if("X".equals(campos[1])) {
+						if("X".equals(campos[2])) {
 							equipo = equipo1;
 							resultado = EnumResultado.GANADOR;
 						}
-						if("X".equals(campos[2])) {
+						if("X".equals(campos[3])) {
 							equipo = equipo1;
 							resultado = EnumResultado.EMPATE;
 						}
-						if("X".equals(campos[3])) {
+						if("X".equals(campos[4])) {
 							equipo = equipo1;
 							resultado = EnumResultado.PERDEDOR;
 						}
@@ -97,5 +102,10 @@ public class Maintp {
 				System.out.println(puntos);
 
 			}
+
+	private static Participante Nombre(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 		}
