@@ -1,6 +1,7 @@
 package ap.tppronostico;
 
 public class Partido {
+	
 	private Equipo equipo1;
 	private Equipo equipo2;
 	private int golesEq1;
@@ -18,6 +19,7 @@ public class Partido {
 		this.equipo2 = equipo2;
 		this.golesEq1 = golesEq1;
 		this.golesEq2 = golesEq2;
+		
 	}
 
 	public Equipo getEquipo1() {
@@ -66,6 +68,16 @@ public class Partido {
 		}
 		
 	}
+
+	public int getIdPartido() {
+		return idPartido;
+	}
+
+	public void setIdPartido(int idPartido) {
+		this.idPartido = idPartido;
+	}
+
+	
+	}
 	
 	
-}

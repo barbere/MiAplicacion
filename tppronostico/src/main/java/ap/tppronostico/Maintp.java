@@ -33,11 +33,12 @@ public class Maintp {
 						System.out.println(lineaResultado);
 						String[] campos = lineaResultado.split(";");
 						Ronda nroRonda = new Ronda(campos[0]);
-						Equipo equipo1 = new Equipo(campos[1]);
-						Equipo equipo2 = new Equipo(campos[4]);
+						IdPartido idPartido = new IdPartido(campos[1]);
+						Equipo equipo1 = new Equipo(campos[2]);
+						Equipo equipo2 = new Equipo(campos[5]);
 						Partido partido = new Partido(equipo1, equipo2);
-						partido.setGolesEq1(Integer.parseInt(campos[2]));
-						partido.setGolesEq2(Integer.parseInt(campos[3]));
+						partido.setGolesEq1(Integer.parseInt(campos[3]));
+						partido.setGolesEq2(Integer.parseInt(campos[4]));
 						partidos.add(partido);
 					}
                          
