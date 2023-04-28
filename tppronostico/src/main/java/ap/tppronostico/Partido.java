@@ -69,13 +69,7 @@ public class Partido {
 		
 	}
 
-	public int getIdPartido() {
-		return idPartido;
-	}
-
-	public void setIdPartido(int idPartido) {
-		this.idPartido = idPartido;
-	}
+	
 
 	
 	}
