@@ -60,13 +60,15 @@ public class Maintp {
 					if (primera) {
 						primera = false;
 					} else {
-						
+						System.out.println(lineaPronostico);
 						String[] campos = lineaPronostico.split(";");
 						Participante nombre = Nombre(campos[0]);
-						Equipo equipo1 = new Equipo(campos[1]);
-						Equipo equipo2 = new Equipo(campos[5]);
+						Equipo equipo1 = new Equipo(campos[3]);
+						Equipo equipo2 = new Equipo(campos[7]);
+						Ronda nroRonda = new Ronda(campos[1]);
+						IdPartido idPartido = new IdPartido(campos[2]);
 						Partido partido = null;
-						System.out.println(lineaPronostico);
+						
                         
 						for (Partido partidoCol : partidos) {
 							if (partidoCol.getEquipo1().getNombre(
@@ -77,18 +79,19 @@ public class Maintp {
 								partido = partidoCol;
 								
 							}
+							
 						}
-						Equipo equipo = null;
-						EnumResultado resultado = null;
-						if("X".equals(campos[2])) {
+						Equipo equipo = equipo1;
+						EnumResultado resultado = EnumResultado.GANADOR;
+						if("X".equals(campos[4])) {
 							equipo = equipo1;
 							resultado = EnumResultado.GANADOR;
 						}
-						if("X".equals(campos[3])) {
+						if("X".equals(campos[5])) {
 							equipo = equipo1;
 							resultado = EnumResultado.EMPATE;
 						}
-						if("X".equals(campos[4])) {
+						if("X".equals(campos[6])) {
 							equipo = equipo1;
 							resultado = EnumResultado.PERDEDOR;
 						}
@@ -99,7 +102,7 @@ public class Maintp {
 				}
 
 				// mostrar los puntos
-				System.out.println("Los puntos obtenidos por el usuario fueron:");
+				System.out.println("Los puntos obtenidos por Mariana:");
 				System.out.println(puntos);
 
 			}
