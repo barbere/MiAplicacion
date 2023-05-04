@@ -1,5 +1,0 @@
-Pronostico;Codigo;Partidos;Equipo;Resultado
-Pronostico1;id:1;Partido:partido1(id:1) (Argentina-Arabia Saudita);Equipo: equipo1 (Argentina);Resultado : Ganador
-Pronostico2;id:2;Partido:partido1(id:1) (Argentina-Arabia Saudita);Equipo: equipo2 (Arabia Saudita);Resultado : Perdedor
-Pronostico3;id:3;Partido:partido2(id:2) (Polonia-Mexico);Equipo: equipo3 (Polonia);Resultado : Empate
-Pronostico4;id:4;Partido:partido2(id:2) (Polonia-Mexico);Equipo: equipo4 (Mexico);Resultado: Empate
