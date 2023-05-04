@@ -1,0 +1,13 @@
+Ronda;idPartido;Equipo1;golesEq1;golesEq2;Equipo2;Descripcion
+1;1;Argentina;1;2;Arabia Saudita;Selecciones
+1;2;Polonia;0;0;Mexico;Selecciones
+1;3;Argentina;2;0;Mexico;Selecciones
+1;4;Arabia Saudita;0;2;Polonia;Selecciones
+1;5;Argentina;2;0;Polonia;Selecciones
+1;6;Arabia Saudita;1;3;Mexico;Selecciones
+2;1;Argentina;1;0;Arabia Saudita;Selecciones
+2;2;Polonia;1;0;Mexico;Selecciones
+2;3;Argentina;0;0;Mexico;Selecciones
+2;4;Arabia Saudita;1;1;Polonia;Selecciones
+2;5;Argentina;1;0;Polonia;Selecciones
+2;6;Arabia Saudita;2;2;Mexico;Selecciones

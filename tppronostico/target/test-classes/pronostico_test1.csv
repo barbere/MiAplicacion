@@ -1,0 +1,25 @@
+Participante;Ronda;IdPartido;Equipo1;Gana1;Empata;Gana2;Equipo2
+Mariana;1;1;Argentina;x;;;Arabia Saudita
+Mariana;1;2;Polonia;;x;;Mexico
+Mariana;1;3;Argentina;x;;;Mexico
+Mariana;1;4;Arabia Saudita;;;x;Polonia
+Mariana;1;5;Argentina;x;;;Polonia
+Mariana;1;6;Arabia Saudita;;x;;Mexico
+Mariana;2;1;Argentina;;x;;Arabia Saudita
+Mariana;2;2;Polonia;x;;;Mexico
+Mariana;2;3;Argentina;x;;;Mexico
+Mariana;2;4;Arabia Saudita;;;x;Polonia
+Mariana;2;5;Argentina;x;;;Polonia
+Mariana;2;6;Arabia Saudita;;x;;Mexico
+Pedro;1;1;Argentina;x;;;Arabia Saudita
+Pedro;1;2;Polonia;;;x;Mexico
+Pedro;1;3;Argentina;x;;;Mexico
+Pedro;1;4;Arabia Saudita;;x;;Polonia
+Pedro;1;5;Argentina;;;x;Polonia
+Pedro;1;6;Arabia Saudita;;;x;Mexico
+Pedro;2;1;Argentina;;;x;Arabia Saudita
+Pedro;2;2;Polonia;;x;;Mexico
+Pedro;2;3;Argentina;x;;;Mexico
+Pedro;2;4;Arabia Saudita;;;x;Polonia
+Pedro;2;5;Argentina;x;;;Polonia
+Pedro;2;6;Arabia Saudita;;;x;Mexico
